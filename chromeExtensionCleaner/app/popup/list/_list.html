@@ -1,0 +1,27 @@
+<!--
+   @controller: ListController
+   @controllerAs: list 
+   @route: /list
+-->
+<div class="content">
+    
+    <div ng-if="list.messages.error" class="alert alert-danger">{{list.messages.error}}</div>
+    <div ng-if="list.messages.info" class="alert alert-info">{{list.messages.info}}</div>
+    <div ng-if="list.extensions">
+        {{::list.appStatic.appListLabel}}
+    </div>
+    <table class="table" ng-if="list.extensions">
+        <tr ng-repeat="ext in list.extensions">
+           <td>
+               <div>
+                   <img class="icon" ng-if="ext.icons.length > 0" ng-src="{{ext.icons[0].url}}" /> 
+                   {{ext.name}}
+               </div>
+                <span class="subtext" ng-if="ext.installType === 'admin'">{{list.appStatic.noPermission}}
+           </td>
+           <td>
+               <button class="btn btn-default"  ng-if="ext.installType !== 'admin'" ng-click="list.uninstall(ext);">Uninstall</button>
+           </td>
+        </tr>
+    </table>
+</div>

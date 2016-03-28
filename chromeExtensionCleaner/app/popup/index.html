@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chrome Extension Cleaner</title>
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="container popup-container" ng-app="jstube.chromeExtensionCleaner.popup">
+   <jstube-navbar></jstube-navbar>
+   
+   <div class="ng-view"></div>
+
+
+    <!--Vendor Scripts-->
+    <script src="/vendor/angular.min.js"></script>
+    <script src="/vendor/angular-route.min.js"></script>
+    <script src="/vendor/angular-sanitize.min.js"></script>
+    <!--Common Module-->
+    <script src="/app/common/commonModule.js"></script>
+    <script src="/app/common/appStatic.js"></script>
+    <!--Popup Module-->
+    <script src="/app/popup/popupModule.js"></script>
+    <script src="/app/popup/popupConfig.js"></script>
+    <script src="/app/popup/popupRoutes.js"></script>
+    
+    <script src="/app/popup/extensions/extensions.js"></script>
+    
+    
+    <script src="/app/popup/nav/navbarController.js"></script>
+    <script src="/app/popup/nav/navbarDirective.js"></script>
+    
+    <script src="/app/popup/home/homeController.js"></script>
+    
+    <script src="/app/popup/list/listController.js"></script>
+<!--    <script src="/j"></script>-->
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿<!--
+    @controller: HomeController
+    @controllerAs: home    
+    @route: /home
+-->
+
+<div class="content">
+    <p ng-repeat="line in home.appStatic.description">{{::line}}</p>
+
+    <p class="shift-down-10">{{::home.appStatic.searchDescriptionLabel}}</p>
+    <div class="col-xs-4 col-xs-offset-4">
+        <button class="btn btn-primary" ng-click="home.listExtensions();">{{::home.appStatic.searchLabel}}</button>
+    </div>
+</div>

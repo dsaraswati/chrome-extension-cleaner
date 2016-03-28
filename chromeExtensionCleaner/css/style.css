@@ -1,0 +1,81 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.popup-container {
+    min-height: 45.0rem;
+    max-height: 45.0rem;
+    width: 40.0rem;
+    overflow: hidden;
+    font-family: "sans-serif";
+}
+
+.container {
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar .navbar-header {
+    padding: 0 1.2rem;
+    margin: 0;
+}
+
+.navbar .navbar-brand {
+    padding: 8px 0;
+}
+
+.navbar .navbar-brand img {
+    height: 3.0rem;
+    display: inline-block;
+}
+
+.ng-view {
+    max-height: 45.0rem;
+    overflow: auto;
+    margin-top: 60px;
+}
+
+.content {
+    padding: 1.4rem;
+    height: auto;
+    overflow: auto;
+}
+
+.shift-down-10 {
+    margin-top: 5.0rem;
+}
+
+.subtext {
+    font-size: 0.6em;
+}
+
+.icon {
+    height: 3.0rem;
+}
+
+/* Scrollbar customizations  */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #54b4eb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #54b4eb;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #54b4eb;
+}
