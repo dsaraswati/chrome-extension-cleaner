@@ -7,6 +7,9 @@
     
     <div ng-if="list.messages.error" class="alert alert-danger">{{list.messages.error}}</div>
     <div ng-if="list.messages.info" class="alert alert-info">{{list.messages.info}}</div>
+    <div>
+        <button class="btn btn-link" ng-click="list.goBack()">Go Back</button>
+    </div>
     <div ng-if="list.extensions">
         {{::list.appStatic.appListLabel}}
     </div>
