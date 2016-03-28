@@ -3,7 +3,7 @@
   "description": "View and clean your malware extensions on chrome browser",
   "version": "1.0.0",
   "author": "Dayanand Saraswati<dayanandsroy@gmail.com>",
-  "license": "Apache",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-banner": "^0.1.3",
