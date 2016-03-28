@@ -151,5 +151,18 @@ describe('jstube.chromeExtensionCleaner.popup', function() {
                 }
             });
         });
+        describe('uninstallSelf', function() {
+            it('should be defined as a function', function() {
+                expect(extensions.uninstallSelf).toBeDefined();
+                expect(typeof (extensions.uninstallSelf)).toBe('function');
+            });
+            it('should call api chrome.management.uninstallSelf', function() {
+                spyOn(chrome.management, 'uninstallSelf');
+
+                extensions.uninstallSelf();
+
+                expect(chrome.management.uninstallSelf).toHaveBeenCalled();                
+            });
+        });
     });
 });

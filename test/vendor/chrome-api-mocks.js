@@ -38,6 +38,12 @@
                 return cb(self);
             }
             return 1;
-        }
+        };
+        chrome.management.uninstallSelf = function(options, cb) {
+            if (cb && typeof (cb) === 'function'){
+                return cb();
+            }
+            return 1;
+        };
     } (global.chrome));
 } (window));

@@ -23,6 +23,10 @@
                     $location.path(routes.list);
                 }
             }
+        };
+
+        vm.uninstallSelf = function() {
+            extensions.uninstallSelf();
         };        
     }
 }(window.angular));

@@ -61,6 +61,14 @@ body {
     height: 3.0rem;
 }
 
+.bottom-btn-container {
+    border-top: 1px solid #ccc;
+    padding-top: 1.0rem;
+    position: absolute;
+    bottom: 1.0rem;
+    width: 90%;
+}
+
 /* Scrollbar customizations  */
 
 ::-webkit-scrollbar {

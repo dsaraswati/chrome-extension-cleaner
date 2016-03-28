@@ -64,8 +64,12 @@
             return dfd.promise;
         };
 
+        factory.uninstallSelf = function() {
+            chrome.management.uninstallSelf();
+        };
+
         factory.init();
-        
+
         return factory;
     }
 } (window.angular, window.chrome));
